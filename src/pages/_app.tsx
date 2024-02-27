@@ -1,3 +1,4 @@
+import Head from "@/components/main/Head";
 import "@/styles/globals.css";
 import { Box } from "@mui/material";
 import { NextPage } from "next";
@@ -17,7 +18,10 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <Box sx={{display: 'flex', justifyContent: 'center'}}>
       <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '500px', height: '100vh', gap: 2, bgcolor: 'white'}}>
+        <Head/>
+        <Box sx={{height: '100vh'}}>
         {getLayout(<Component {...pageProps} />)}
+        </Box>
       </Box>
     </Box>
   )

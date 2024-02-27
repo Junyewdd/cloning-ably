@@ -11,8 +11,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
       justifyContent: 'center', 
       alignItems: 'center', 
       width: '100%', 
-      height: '100%', 
-      // bgcolor: 'yellow'
+      height: '100%',
     }}>
       <Box component="main">
         {children}
