@@ -12,8 +12,8 @@ type ProductType = {
 
 const ContentCard = ({product}: {product: ProductType}) => {
   return (
-    <Box sx={{width: '100%', height: '420px', display: 'flex', paddingTop: '5px', flexDirection: 'column', alignItems: 'center',padding: '3px'}}>
-      <Avatar src={product.image} sx={{borderRadius: '7px', width: '97%', height: '330px'}}/>
+    <Box sx={{width: '100%', height: '420px', display: 'flex', paddingTop: '5px', flexDirection: 'column', alignItems: 'center',padding: '4px', paddingLeft: '10px'}}>
+      <Avatar src={product.image} sx={{borderRadius: '7px', width: '97%', height: '330px',}}/>
       <Box sx={{display: 'flex', alignContent: 'flex-start', color: 'grey', alignSelf: 'flex-start'}}>
         <Box sx={{color: 'red', fontWeight: 'normal', marginRight: '5px'}}>
         {product.sale}
