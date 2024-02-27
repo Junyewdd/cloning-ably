@@ -1,5 +1,5 @@
 import { product_gallery } from '@/data/product_gallery';
-import { Box, Button } from '@mui/material';
+import { Avatar, Box, Button } from '@mui/material';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 
@@ -23,10 +23,20 @@ const Product = () => {
   }, [id]);
 
   return (
-    <Box>
+    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
       {
       product && 
-      product.name
+      <>
+      <Avatar src={product.image} sx={{borderRadius: '7px', width: '97%', height: '330px',}}/>
+      
+      <Box sx={{width: '100%', height: '70px', borderBottom: '1px solid grey', padding: '10px', fontWeight: 'bold'}}>
+        {product.company}<br/>
+        #캐주얼 #캠퍼스룩
+      </Box>
+      <Box sx={{fontWeight:'bold', fontSize: '20px', display: 'flex', justifyContent:'flex-start'}}>
+        {product.name}
+      </Box>
+      </>
       }
     </Box>
   )
