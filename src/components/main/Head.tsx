@@ -3,7 +3,7 @@ import React from 'react'
 
 const Head = () => {
   return (
-    <Box sx={{width: '500px', height: '50px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid black'}}>
+    <Box sx={{width: '500px', height: '50px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',}}>
       <Box sx={{width: '10%'}}/>
       <Avatar
         src='images/ably.png'

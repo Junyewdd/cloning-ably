@@ -20,10 +20,10 @@ const Search = () => {
 export default Search;
 
 const barStyle= () => ({
-  p: '2px 4px', 
+  p: '0px 4px', 
   display: 'flex', 
   alignItems: 'center', 
-  width: 400, 
+  width: 370,
   bgcolor: '#E2E2E2',
   borderRadius: 2,
   // margin: ,
