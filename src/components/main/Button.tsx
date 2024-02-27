@@ -9,7 +9,7 @@ const Button = ({text, select, setContent}: {text: string, select: string, setCo
   }
 
   return (
-    <Box sx={{width: '22%', display: 'flex', justifyContent:'center'}} onClick={controlSelect}>
+    <Box sx={{width: '22%', display: 'flex', justifyContent:'center', cursor: 'pointer'}} onClick={controlSelect}>
       <Avatar src={controlImage({text, select})}/>
     </Box>
   )
